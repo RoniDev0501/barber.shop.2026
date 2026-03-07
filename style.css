@@ -269,8 +269,9 @@ footer {
 
 header{
  display:flex;
- justify-content:space-between;
- align-items:center;
+justify-content:space-between;
+align-items:center;
+padding:15px 10px; /* diminui espaço lateral */
 }
 
 nav{
@@ -314,4 +315,5 @@ display:flex;
 }
 
 }
+
 
