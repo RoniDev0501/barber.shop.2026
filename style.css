@@ -5,7 +5,7 @@
 }
 
 body {
- font-family: 'Montserrat', sans-serif;
+  font-family: 'Rye', cursive;
  background-color: #000;
  color: #fff;
 
@@ -142,8 +142,9 @@ a {
 .hero h1 {
  font-size: 60px;
  font-weight: 700;
- letter-spacing: 3px;
  margin-bottom: 20px;
+font-family: 'Rye', cursive;
+letter-spacing: 2px;
 }
 
 .subtitle {
@@ -269,22 +270,21 @@ footer {
 
 header{
  display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 10px; /* diminui espaço lateral */
+ justify-content:space-between;
+ align-items:center;
 }
 
 nav{
  display:flex;
  align-items:center;
 }
- 
- .menu-btn{
+
+.menu-btn{
  display:flex;
  margin-left:auto;
  margin-right:5px;
 }
- 
+
 .menu{
  position:absolute;
  top:70px;
@@ -315,5 +315,3 @@ display:flex;
 }
 
 }
-
-
