@@ -274,6 +274,14 @@ header{
  align-items:center;
 }
 
+body {
+  font-family: 'Rye', cursive;
+}
+
+.hero h1 {
+font-family: 'Rye', cursive;
+}
+
 nav{
  display:flex;
  align-items:center;
