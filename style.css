@@ -269,8 +269,8 @@ footer {
 }
 
 .icones img {
- width: 44px;
- height: 44px;
+ width: 54px;
+ height: 54px;
  border-radius: 50%;
  object-fit: cover;
  display: block;
@@ -281,64 +281,136 @@ footer {
  line-height: 1;
  text-align: right;
  white-space: nowrap; /* ← impede quebra de linha */
-color: #ffffff;
-padding-right: 75px;
+color: #000000;
+padding-right: 85px;
+font-size: 20px;
 }
 
 @media (max-width:768px){
 
-header{
- display:flex;
- justify-content:space-between;
- align-items:center;
+ header{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+ }
+ 
+ html, body  {
+   font-family: 'Rye', cursive;
+   overflow-x: hidden;
+ }
+
+ nav{
+    display:flex;
+    align-items:center;
+  }
+
+ .menu-btn{
+    display:flex;
+    margin-left:auto;
+    margin-right:35px;
+  }
+
+ .menu{
+   position:absolute;
+   top:70px;
+   left:0;
+   width:100%;
+   background:#111;
+   flex-direction:column;
+   padding:20px;
+   display:none;
+   gap:12px;
+ }
+
+ .menu a{
+   width:100%;
+   height:50px;
+   font-size:16px;
+   background:#1a1a1a;
+   border-radius:12px;
+   border:1px solid #333;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+  } 
+
+ #menu-toggle:checked ~ .menu{
+  display:flex;
+ }
+
+ .footer-container {
+    gap: 20px;        /* ← era 300px, estava causando overflow */
+    padding: 20px;
+  }
+
+ .icones {
+   padding-left: 0; /* ← era 55px, empurrava para fora */
+   gap: 20px;
+  }
+
+  .copyright {
+    padding-right: 0; /* ← era 85px, empurrava para fora */
+    font-size: 14px;
+  }
+
+  .logo {
+    padding-left: 13px;   /* ← era 55px, vazava à esquerda */
+    font-size: 20px;
+
+  }
+
+  .parallax {
+    background-attachment: scroll; /* ← fixed causa overflow no mobile */
+  }
+
+  .icones img {
+ width: 34px;
+ height: 34px;
+ }
+
+ .full-text {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 46px;      /* ← era 60px, estava vazando */
+    letter-spacing: 2px;  /* ← era 2px, somava no overflow */
+    font-family: 'Rye', cursive;
+  }
+
+  .parallax h2 {
+    font-size: 3rem;    /* ← era 3rem, estava vazando */
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 0 10px;
+  }
+
+  .hero-content {
+    padding: 10px;
+    width: 100%;
+    height: -400px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .hero {
+    margin-top: 0; /* ← remove qualquer margem do topo */
+  }
+
+  main {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .parallax-bg {
+    animation: mover 8s ease-in-out infinite alternate;
+  }
+
+  @keyframes mover {
+    from { transform: translateY(0px) scale(1.1); }
+    to   { transform: translateY(-400px) scale(1.1); }
+  }
 }
 
-body {
-  font-family: 'Rye', cursive;
-}
-
-.hero h1 {
-font-family: 'Rye', cursive;
-}
-
-nav{
- display:flex;
- align-items:center;
-}
-
-.menu-btn{
- display:flex;
- margin-left:auto;
- margin-right:5px;
-}
-
-.menu{
- position:absolute;
- top:70px;
- left:0;
- width:100%;
- background:#111;
- flex-direction:column;
- padding:20px;
- display:none;
- gap:12px;
-}
-
-.menu a{
- width:100%;
- height:50px;
- font-size:16px;
- background:#1a1a1a;
- border-radius:12px;
- border:1px solid #333;
-
-display:flex;
- align-items:center;
- justify-content:center;
-}
-
-#menu-toggle:checked ~ .menu{
- display:flex;
-}
-
-}
