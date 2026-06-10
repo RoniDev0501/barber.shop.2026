@@ -397,6 +397,7 @@ font-size: 20px;
 
   .hero {
     margin-top: 0; /* ← remove qualquer margem do topo */
+    height: 30vh;
   }
 
   main {
@@ -404,13 +405,8 @@ font-size: 20px;
     padding-top: 0;
   }
 
-  .parallax-bg {
-    animation: mover 8s ease-in-out infinite alternate;
-  }
-
-  @keyframes mover {
-    from { transform: translateY(0px) scale(1.1); }
-    to   { transform: translateY(-400px) scale(1.1); }
-  }
+  .parallax {
+  margin-top: -1px; /* ← elimina o gap entre as sections */
 }
-
+}
+ 
